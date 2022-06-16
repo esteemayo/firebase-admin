@@ -1,0 +1,3 @@
+# Firebase Admin Dashboard
+
+Built with react, firebase, contextAPI and more...

@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+
+  &__container {
+    flex: 6;
+
+    .widgets,
+    .charts {
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .charts {
+      padding: 0.5rem 2rem;
+    }
+
+    .list-container {
+      margin: 2rem;
+      padding: 2rem;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+      .list-title {
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: gray;
+        margin-bottom: 1.5rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.app.dark {
+  background-color: #111;
+  color: rgb(156, 156, 156);
+
+  .chart-grid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    background-color: #111;
+
+    &-cell {
+      color: gray;
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+      input {
+        caret-color: gray;
+      }
+    }
+  }
+
+  .sidebar {
+    background-color: #111;
+    border-color: #333;
+
+    .top {
+      .logo {
+        color: gray;
+      }
+    }
+
+    hr {
+      border-color: #333;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+
+        .icon {
+          color: #999;
+        }
+      }
+    }
+
+    .color-options {
+      border-color: #999;
+    }
+  }
+
+  .datatable {
+    .data-grid {
+      color: gray;
+      border: none;
+
+      .view-button,
+      .delete-button,
+      .cell-with-status {
+        color: gray;
+        border: none;
+      }
+    }
+  }
+
+  .new {
+    .form-input {
+      label {
+        .icon {
+          color: #999;
+        }
+      }
+
+      input {
+        caret-color: gray;
+
+        &::placeholder {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+    color: gray;
+  }
+}

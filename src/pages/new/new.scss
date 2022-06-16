@@ -1,0 +1,105 @@
+.new {
+  display: flex;
+  width: 100%;
+
+  &-container {
+    flex: 6;
+
+    .top,
+    .bottom {
+      margin: 2rem;
+      padding: 1rem;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+      display: flex;
+
+      h1 {
+        text-transform: capitalize;
+        color: lightgray;
+        font-size: 2rem;
+      }
+
+      .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 5rem;
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        flex: 2;
+
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2rem;
+          justify-content: space-around;
+        }
+
+        .form-input {
+          width: 40%;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.2rem;
+
+            .icon {
+              color: #7451f8;
+              cursor: pointer;
+            }
+          }
+
+          input {
+            border: none;
+            outline: none;
+            display: inline-block;
+            width: 100%;
+            padding: 0.5rem;
+            border-bottom: 1px solid gray;
+            caret-color: #7451f8;
+
+            &::placeholder {
+              color: #bbb;
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        button {
+          border: none;
+          display: inline-block;
+          width: 15rem;
+          padding: 1rem;
+          background-color: #008080;
+          color: #fff;
+          border-radius: 0.5rem;
+          font-weight: bold;
+          margin-top: 1rem;
+          cursor: pointer;
+          transition: all 0.5s ease;
+
+          &:hover {
+            background-color: #008080d3;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          &:disabled {
+            background-color: rgba(3, 92, 92, 0.322);
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

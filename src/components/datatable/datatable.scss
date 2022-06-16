@@ -1,0 +1,101 @@
+.datatable {
+  height: 70rem;
+  padding: 2rem;
+
+  &-title {
+    width: 100%;
+    font-size: 2.4rem;
+    color: gray;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link:link,
+    .link:visited {
+      text-decoration: none;
+      color: #008000;
+      font-size: 1.6rem;
+      font-weight: 400;
+      border: 1px solid #008000;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .data-grid {
+    font-size: 1.4rem;
+  }
+
+  .cell-with-img {
+    display: flex;
+    align-items: center;
+
+    .cell-img {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 1.6rem;
+      object-fit: cover;
+      margin-right: 2rem;
+    }
+  }
+
+  .cell-with-status {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: #008000;
+    }
+
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cell-action {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .view-button {
+      border: none;
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.5rem;
+      background-color: transparent;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .delete-button {
+      border: none;
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.5rem;
+      background-color: transparent;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

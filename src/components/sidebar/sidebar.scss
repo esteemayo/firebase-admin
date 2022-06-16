@@ -1,0 +1,94 @@
+.sidebar {
+  flex: 1;
+
+  border-right: 0.5px solid rgb(230, 227, 227);
+  min-height: 100vh;
+  background-color: #fff;
+
+  .top {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #6439ff;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+  }
+
+  .center {
+    padding-left: 1rem;
+
+    ul {
+      list-style: none;
+
+      .title {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #999;
+        margin: 1.5rem 0 0.5rem 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #ece8ff;
+        }
+
+        .icon {
+          font-size: 1.8rem;
+          color: #7451f8;
+        }
+
+        span {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #888;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+
+    .color-options {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid #7451f8;
+      cursor: pointer;
+
+      &:not(:last-of-type) {
+        margin-right: 0.5rem;
+      }
+
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+
+      &:nth-child(2) {
+        background-color: #333;
+      }
+
+      &:nth-child(3) {
+        background-color: darkblue;
+      }
+    }
+  }
+}
